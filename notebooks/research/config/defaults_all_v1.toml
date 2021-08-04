@@ -1,0 +1,34 @@
+[main]
+title = "defaults_all_v1"
+root_levels_up = 2
+timeout_s = 3600
+
+[data.campos]
+datasets = "all"
+versions = [ 1,]
+anomaly_fraction = [ -1, 2, 5, 10,]
+
+[OCSVM.OCSVM_defaults]
+kernel = "rbf"
+nu = 0.5
+gamma = 0.5
+
+[HBOS.HBOS_defaults]
+n_bins = 'sqrt_of_instances'
+
+[IForest.IForest_defaults]
+n_estimators = 100
+max_samples = 256
+max_features = 1.0
+
+[KNN.KNN_defaults]
+n_neighbors = 'rule_of_thumb'
+
+[LOF.LOF_defaults]
+n_neighbors = 'rule_of_thumb'
+
+[CBLOF.CBLOF_defaults]
+n_clusters =  10
+alpha = 0.9
+beta = 5
+use_weights = false

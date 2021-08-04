@@ -1,0 +1,12 @@
+[main]
+title = "grid_HBOS_v1"
+root_levels_up = 2
+timeout_s = 3600
+
+[data.campos]
+datasets = "all"
+versions = [ 1,]
+anomaly_fraction = [ -1, 2, 5, 10,]
+
+[HBOS.HBOS_grid]
+n_bins = [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50,]

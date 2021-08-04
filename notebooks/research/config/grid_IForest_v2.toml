@@ -1,0 +1,15 @@
+[main]
+title = "grid_IForest_v2"
+root_levels_up = 2
+timeout_s = 3600
+
+[data.campos]
+datasets = "all"
+versions = [ 1,]
+anomaly_fraction = [ -1, 2, 5, 10,]
+
+[IForest.IForest_grid]
+n_estimators = [ 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300,]
+max_samples = [ 0.1, 0.2, 0.30000000000000004, 0.4, 0.5, 0.6, 0.7000000000000001, 0.8, 0.9, 1.0,]
+max_features = [ 0.1, 0.2, 0.30000000000000004, 0.4, 0.5, 0.6, 0.7000000000000001, 0.8, 0.9, 1.0,]
+random_state = 3423452345

@@ -1,0 +1,16 @@
+[main]
+title = "grid_CBLOF_v2"
+root_levels_up = 2
+timeout_s = 3600
+
+[data.campos]
+datasets = "all"
+versions = [ 1,]
+anomaly_fraction = [ -1, 2, 5, 10,]
+
+[CBLOF.CBLOF_grid]
+n_clusters = [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48,]
+alpha = [ 0.5, 0.6, 0.7, 0.7999999999999999, 0.8999999999999999,]
+beta = [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20,]
+use_weights = [ false, true,]
+random_state = 123412351
